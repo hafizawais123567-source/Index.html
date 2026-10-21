@@ -1,0 +1,3 @@
+{ "name": "dzone-pkp-shop", "version": "1.0.0", "private": true, "type": "module",
+  "description": "Dzone PKP – Lasani Mobile online shop (zero dependencies)",
+  "scripts": { "start": "node server.js", "dev": "node server.js" }, "engines": { "node": ">=18" } }

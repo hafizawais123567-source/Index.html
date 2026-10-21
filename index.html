@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a8f4a">
+<title>Dzone PKP · Lasani Mobile – Mobile Accessories in Pakpattan</title>
+<meta name="description" content="Dzone PKP by Lasani Mobile, Pakpattan: cables, chargers, power banks, earphones and more. Order easily on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a8f4a'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle'%3E⚡%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top" id="top">
+  <div class="top-row">
+    <a class="logo" href="#top" aria-label="Dzone PKP home"><span class="logo-mark">⚡</span><span><b>Dzone <em>PKP</em></b><small>Online Shop · Lasani Mobile</small></span></a>
+    <div class="top-actions">
+      <a class="wa-mini" data-wa aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14.3c-.2.6-1.300 1.200-1.800 1.200-.5.100-1.100.100-1.800-.100-2.500-.800-4.100-2.700-4.900-4.600-.4-.900-.100-1.700.5-2.200.2-.2.400-.2.600-.2h.4c.1 0 .3 0 .4.300l.6 1.400c.1.200 0 .4-.1.500l-.4.500c-.1.100-.2.300 0 .500.600 1 1.400 1.700 2.400 2.200.2.100.4.100.5-.1l.6-.7c.1-.2.300-.2.500-.1l1.400.7c.2.100.3.200.3.300 0 .2 0 .8-.2 1.400z"/></svg><span>WhatsApp</span></a>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.500"/><circle cx="18" cy="20" r="1.500"/><path d="M2 3h3l2.600 12.500a2 2 0 0 0 2 1.500h7.800a2 2 0 0 0 2-1.500L21 7H6"/></svg><span class="count" id="cartCount">0</span></button>
+    </div>
+  </div>
+  <form class="search" id="searchForm" role="search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg><input id="search" type="search" placeholder="Search cables, chargers, power banks…" aria-label="Search products" autocomplete="off"></form>
+  <nav class="menu" aria-label="Main menu"><a href="#products">Products</a><a href="#products" data-offers>🔥 Offers</a><a href="#showcase">Power Bank</a><a href="#faq">FAQ</a><a href="#guide">Guide</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="showcase" id="showcase" aria-label="20000mAh power bank showcase">
+  <div class="stage">
+    <a class="skip" href="#products" id="skip">Shop products ↓</a>
+    <canvas id="cv" role="img" aria-label="Rotating 20000mAh power bank"></canvas>
+    <div class="sc-load" id="scLoad">Loading animation…</div>
+    <div class="sc-bar" id="scBar"></div>
+    <div class="beat pos-top" data-in="0" data-out=".22"><span class="kicker">Featured</span><h2>20000mAh <span class="gold">Power Bank</span></h2><p>Scroll to explore</p></div>
+    <div class="beat pos-top" data-in=".28" data-out=".52"><h2>Days of <span class="gold">power</span></h2><p>Big 20000mAh capacity in a slim black &amp; gold body.</p></div>
+    <div class="beat pos-top" data-in=".58" data-out=".8"><h2>Fast <span class="gold">charging</span></h2><p>See the exact battery level on the LED display.</p></div>
+    <div class="beat pos-bottom" data-in=".86" data-out="1.2"><h2><span class="gold" id="scPrice"></span></h2><button class="btn gold-btn" id="scAdd" data-add="powerbank-20k">Add to Cart</button></div>
+  </div>
+</section>
+
+<section class="wrap" id="products">
+  <div class="sec-head"><h2>Our Products</h2><span id="resultCount" class="muted"></span></div>
+  <div class="chips" id="chips" role="tablist" aria-label="Product categories"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden><p>😕 No products found.</p><button class="btn primary" id="clearSearch">Show all products</button></div>
+</section>
+
+<section class="wrap" id="faq">
+  <div class="sec-head"><h2>Frequently Asked Questions</h2></div>
+  <div class="faq">
+    <details open><summary>How can I place an order?</summary><p>Add products to your cart, tap <b>Place Order</b>, fill in your name, phone number and delivery address, then tap <b>Confirm Order on WhatsApp</b>. Your order message opens in WhatsApp ready to send to Lasani Mobile.</p></details>
+    <details><summary>Do you offer delivery?</summary><p>Yes. We deliver in Pakpattan and can arrange delivery to other areas. Delivery charges, if any, are confirmed with you on WhatsApp before dispatch.</p></details>
+    <details><summary>How can I contact Lasani Mobile?</summary><p>Call or WhatsApp us on <b data-phone></b>, or visit the shop at <span data-address></span>.</p></details>
+    <details><summary>Can I order through WhatsApp?</summary><p>Yes. WhatsApp is how every order is confirmed. You can also message us directly with the product you want.</p></details>
+    <details><summary>What payment methods are available?</summary><p>There is no online payment on this website. Payment is arranged directly with the shop when we confirm your order on WhatsApp (for example cash on delivery or a mobile wallet transfer).</p></details>
+    <details><summary>How long does delivery take?</summary><p>Orders within Pakpattan are usually delivered within one to two days. Other cities depend on the courier. We will give you an estimate when we confirm.</p></details>
+    <details><summary>Can I cancel an order?</summary><p>Yes, as long as it has not been dispatched. Message us on WhatsApp as soon as possible with your name and order details.</p></details>
+  </div>
+</section>
+
+<section class="wrap" id="about">
+  <div class="about">
+    <div><span class="kicker dark">About the shop</span><h2>Lasani Mobile</h2><p>Your local mobile accessories shop in Pakpattan. We sell quality cables, chargers, power banks, earphones, stands and more at fair prices, and help you pick what suits your phone.</p>
+      <p class="place">📍 Pakpattan, College Road, near HBL Bank<br>📞 <span data-phone></span></p>
+      <a class="btn wa-btn" data-wa>Chat on WhatsApp</a></div>
+    <div class="about-card"><b>Dzone PKP</b><span>Our online shop. Browse, add to cart and confirm your order on WhatsApp.</span></div>
+  </div>
+</section>
+
+<section class="wrap" id="guide">
+  <div class="sec-head"><h2>Mobile Accessories Guide</h2></div>
+  <div class="guide">
+    <article class="reveal-s"><h3>🔌 Choosing a charging cable</h3><p>Match the connector to your phone (USB-C, Lightning or Micro USB). Pick a length that suits you, 1 to 1.5 m for most people. A thicker, braided cable lasts longer, and fast charging needs a cable rated for it.</p></article>
+    <article class="reveal-s"><h3>🔌 Charger compatibility</h3><p>Check your phone’s charging power in watts. A charger with higher wattage is safe because the phone only takes what it needs; a lower one just charges more slowly. Always use a good cable with it.</p></article>
+    <article class="reveal-s"><h3>⚡ Fast charging basics</h3><p>The charger, the cable and the phone must all support the same fast-charging standard (such as USB Power Delivery or Quick Charge). Charging is fastest up to about half full, then slows down to protect the battery.</p></article>
+    <article class="reveal-s"><h3>🔋 Power bank selection</h3><p>Capacity is shown in mAh. Some power is lost in conversion, so expect roughly 60–70% usable: a 10000mAh bank gives about two phone charges, 20000mAh about four. Also check the output watts and the ports.</p></article>
+    <article class="reveal-s"><h3>🔁 USB-C vs Lightning</h3><p>USB-C is reversible and used by most Android phones and by iPhone 15 and newer. Lightning is found on older iPhones. Micro USB is an older Android connector. Check your phone’s port before buying.</p></article>
+    <article class="reveal-s"><h3>✅ Spotting suitable accessories</h3><p>Check that the product lists your phone’s connector and power rating, buy from a trusted shop, and avoid anything that gets very hot. Ask us on WhatsApp if you’re not sure and we’ll help you choose.</p></article>
+  </div>
+</section>
+
+<section class="wrap" id="legal">
+  <div class="sec-head"><h2>Policies</h2></div>
+  <div class="faq">
+    <details id="privacy"><summary>Privacy Policy</summary>
+      <p><b>Last updated: October 2026.</b> This policy explains how Dzone PKP (operated by Lasani Mobile, Pakpattan) handles your information.</p>
+      <p><b>What we collect.</b> Only what you type into the order form: your name, phone number, delivery address and optional notes. We do not ask for card or bank details.</p>
+      <p><b>How we use it.</b> Your details are placed in a WhatsApp message that you send to us, and we use them only to confirm, prepare and deliver your order and to contact you about it.</p>
+      <p><b>Cart data.</b> Your cart is saved in your own browser (local storage) so it is still there when you return. You can clear it anytime from the cart.</p>
+      <p><b>Sharing.</b> We do not sell your information. We may share your name, phone number and address with a delivery courier only to deliver your order. Messages sent through WhatsApp are also subject to WhatsApp’s own privacy policy.</p>
+      <p><b>Your choices.</b> You can ask us on WhatsApp to delete the order details we hold about you. For any questions, contact us on <span data-phone></span>.</p></details>
+    <details id="terms"><summary>Terms &amp; Conditions</summary>
+      <p><b>Last updated: October 2026.</b> By using this website and placing an order you agree to these terms.</p>
+      <p><b>Orders.</b> Placing an order through this website sends a request to Lasani Mobile on WhatsApp. An order is only confirmed once we reply and agree on availability, price, delivery and payment.</p>
+      <p><b>Prices and stock.</b> Prices are in Pakistani Rupees and may change without notice. Items are subject to availability, and we may contact you if something is out of stock.</p>
+      <p><b>Payment.</b> No payment is taken on this website. Payment method and any delivery charges are agreed with you on WhatsApp.</p>
+      <p><b>Delivery.</b> Delivery times are estimates only and may vary with location and courier.</p>
+      <p><b>Cancellations, returns and warranty.</b> Orders can be cancelled before dispatch. Please inspect your items on receipt and contact us promptly about any fault or wrong item. Return, exchange and warranty terms are confirmed at the time of sale.</p>
+      <p><b>Product information.</b> We try to keep descriptions and images accurate, but they are for guidance and may differ slightly from the actual product.</p>
+      <p><b>Contact.</b> Lasani Mobile, <span data-address></span>, <span data-phone></span>.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap foot-grid">
+    <div><h3>Dzone PKP</h3><p>Lasani Mobile</p><p>📞 WhatsApp: <span data-phone></span></p><p>📍 <span data-address></span></p><a class="btn wa-btn" data-wa>WhatsApp us</a></div>
+    <div><h4>Quick links</h4><a href="#products">Products</a><a href="#products" data-offers>Offers</a><a href="#faq">FAQ</a><a href="#guide">Education</a><a href="#about">About</a></div>
+    <div><h4>Legal</h4><a href="#legal" onclick="document.getElementById('privacy').open=true">Privacy Policy</a><a href="#legal" onclick="document.getElementById('terms').open=true">Terms &amp; Conditions</a><a href="#top" data-open-cart>My cart</a></div>
+  </div>
+  <div class="copy">© <span data-year></span> Dzone PKP · Lasani Mobile. All rights reserved.</div>
+</footer>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Shopping cart">
+  <div class="drawer-head"><h2 id="drawerTitle">Your Cart</h2><button class="icon-x" id="closeCart" aria-label="Close">✕</button></div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+<dialog class="detail" id="detail"><button class="icon-x" id="closeDetail" aria-label="Close">✕</button><div id="detailBody"></div></dialog>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
